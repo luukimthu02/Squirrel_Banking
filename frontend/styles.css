@@ -1,6 +1,6 @@
 :root {
   /* Colors */
-  --primary: #ff6347;
+  --primary: #1b1b1b;
   /* Tomato */
   --primary-light: #ff9980;
   /* Lighter Tomato */
@@ -16,12 +16,13 @@
   /* Lighter FloralWhite */
   --white: #ffffff;
   --border: #dcdcdc;
+  --text: #161b21;
   /* Gainsboro */
   /* Sizes */
   --radius: 10px;
   --space-xs: 5px;
-  --space-sm: 10px;
-  --space-md: 20px;
+  --space-sm: 5px;
+  --space-md: 5px;
   --space-xl: 40px;
 }
 
@@ -68,7 +69,7 @@ form {
 input {
   margin-top: var(--space-xs);
   margin-bottom: var(--space-sm);
-  height: 45px;
+  height: 40px;
   padding: var(--space-xs) var(--space-sm);
   border: 1px solid var(--border);
   border-radius: var(--radius);
@@ -106,6 +107,7 @@ button {
 button:hover {
   filter: brightness(115%);
   cursor: pointer;
+  background-color: #8b4513;
 }
 
 button:focus {
@@ -127,30 +129,39 @@ button:focus {
 /* ------------------------------------------------------------------------ */
 
 .login-title {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: bold;
   color: var(--white);
   margin: var(--space-md);
 }
 
+.login-title1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2rem;
+  font-weight: 300;
+  color: var(--white);
+  margin: var(--space-md);
+}
+
 .login-logo {
-  height: 80px;
+  height: 50px;
   vertical-align: middle;
 }
 
 .login-page {
   display: flex;
-  height: 100%;
+  height: auto;
   align-items: center;
   justify-content: center;
   background: linear-gradient(var(--primary), var(--primary-light));
+  background-image: url(./images/background-canh-dep-hd-1080p_092013947.jpg);
 }
 
 .login-container {
   flex: auto;
-  max-width: 480px;
-  max-height: 100%;
-  overflow: auto;
+  max-width: 400px;
+  /* max-height: 300px; */
+  /* overflow: auto; */
 }
 
 .login-content {
@@ -162,7 +173,7 @@ button:focus {
 .login-separator {
   position: relative;
   top: 0.5em;
-  border-top: 1px solid var(--border);
+  border-top: 2px solid var(--border);
   opacity: 0.6;
   margin: var(--space-md) 0;
 }
